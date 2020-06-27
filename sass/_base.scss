@@ -1,0 +1,12 @@
+/* -----BODY----- */
+
+body {
+    margin: 0;
+    a {
+        @include a-link;
+    }
+}
+
+h2, h3 {
+    text-align: center;
+}

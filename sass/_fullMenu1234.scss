@@ -1,0 +1,264 @@
+// PAGE HTML MENU 1234
+
+.premier_titre {
+    font-size: 1.75em;
+    font-family: sans-serif;
+}
+
+.menu_complet {
+    @include box-shadow();
+    margin: auto;
+    width: 70%;
+    padding: 80px 0;
+    margin-bottom: 125px;
+    ul {
+        margin: 50px 80px;
+        padding: 0;
+    }
+    li {
+        @include display-flex(space-between);
+    }
+    // h2 {
+    //     font-size: 2em;
+    // }
+    h3 {
+        margin: 75px 0 10px 0;
+        display: flex;
+        justify-content: space-between;
+        &::before {
+            content: "";
+            width: 100%;
+            display: flex;
+            background-repeat: no-repeat;
+            margin-top: 5px;
+            background-size: contain;
+        }
+        &::after {
+            content: "";
+            width: 100%;
+            display: flex;
+            background-repeat: no-repeat;
+            margin-top: 5px;
+            background-size: contain;
+        }
+    }
+    span {
+        font-size: 1.25em;
+        width: 100%;
+    }
+    span::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        // background: black;
+        transition: width .3s;
+    }
+    span:hover::after {
+        width: 100%;
+        transition: width .3s;
+    }
+}
+
+// -----PAGE LA NOTE ENCHANTEE 1-----//
+
+#menu_note {
+    background-color: $couleurmenu1;
+    >i{
+        display: block;
+        text-align: center;
+        font-size: 60px;
+        + h2 {
+            font-size: 3em;
+            margin: 0;
+        }
+    }
+    i::before {
+        @include icon-musique();
+    }
+    i:last-child {
+        margin-right: 10px;
+        font-size: 40px;
+    }
+    h2:last-child {
+        font-size: 2em;
+        margin: 0;
+    }
+    h2 {
+        font-family: 'Devonshire', cursive;
+        font-weight: 400;
+    }
+    h3 {
+        &::before {
+            background-image: url("../lignes_menus/note1.png");
+        }
+        &::after {
+            background-image: url("../lignes_menus/note2.png");
+        }
+    span {
+        // font-family: 'Courgette', cursive;
+        font-family: 'Kalam', cursive;
+    }    
+    }
+    span::after {
+        background: black;
+    }
+    p {
+        // font-family: 'Courgette', cursive;
+        font-family: 'Kalam', cursive;
+    }
+    li p:nth-child(2) {
+        font-weight: 600;
+    }
+}
+
+
+// -----PAGE LE CHIC A LA FRANCAISE 2----- //
+
+#menu_chic {
+    background-color: $couleurmenu2;
+    h2 {
+        @include titre-chic();
+        font-size: 2em;
+    }
+    h3:first-child {
+        &::before {
+            background-image: url("../lignes_menus/chic1a.png");
+        }
+        &::after {
+            background-image: url("../lignes_menus/chic1b.png");
+        }
+        span::after {
+            background: rgb(198, 116, 18);
+        }
+        span {
+            color: rgb(198, 116, 18);
+        }
+    }
+    h3:nth-of-type(2) {
+        &::before {
+            background-image: url("../lignes_menus/chic2a.png");
+        }
+        &::after {
+            background-image: url("../lignes_menus/chic2b.png");
+        }
+        span::after {
+            background: rgb(165, 103, 153);
+        }
+        span {
+            color: rgb(165, 103, 153);
+        }
+    }
+    h3:nth-of-type(3) {
+        &::before {
+            background-image: url("../lignes_menus/chic3a.png");
+        }
+        &::after {
+            background-image: url("../lignes_menus/chic3b.png");
+        }
+        span::after {
+            background: rgb(110, 76, 204);
+        }
+        span {
+            color: rgb(110, 76, 204);
+        }
+    }
+    ul li:nth-child(-n+4) {
+        color: rgb(198, 116, 18);
+    }
+    ul li:nth-child(n+5) {
+        color: rgb(165, 103, 153);
+    }
+    ul li:nth-child(n+9) {
+        color: rgb(110, 76, 204);
+    }
+    li p:nth-child(2) {
+        font-size: 1.1em;
+    }
+}
+
+// -----PAGE LE DELICE DES PAPILLES 3----- //
+
+#menu_delice {
+    background-color: $couleurmenu3;
+    h2 {
+        @include titre-delice();
+        font-size: 3em;
+    }
+    h3, p {
+        font-family:'Kalam', cursive;
+        font-weight: 400;
+    }
+    h3:first-child {
+        &::before {
+            background-image: url("../lignes_menus/delice1a.png");
+        }
+        &::after {
+            background-image: url("../lignes_menus/delice1b.png");
+        }
+        span::after {
+            background: rgb(2, 40, 221);
+        }
+        span {
+            color: rgb(2, 40, 221);
+        }
+    }
+    h3:nth-of-type(2) {
+        &::before {
+            background-image: url("../lignes_menus/delice2a.png");
+        }
+        &::after {
+            background-image: url("../lignes_menus/delice2b.png");
+        }
+        span::after {
+            background: rgb(6, 112, 243);
+        }
+        span {
+            color: rgb(6, 112, 243);
+        }
+    }
+    h3:nth-of-type(3) {
+        &::before {
+            background-image: url("../lignes_menus/delice3a.png");
+        }
+        &::after {
+            background-image: url("../lignes_menus/delice3b.png");
+        }
+        span::after {
+            background: rgb(34, 157, 249);
+        }
+        span {
+            color: rgb(34, 157, 249);
+        }
+    }
+    li p:nth-child(2) {
+        font-size: 1.1em;
+    }
+}
+
+// -----PAGE LA PALETTE DU GOUT 4----- //
+
+#menu_palette {
+    background-color: $couleurmenu4;
+    h2 {
+        @include titre-palette();
+        font-size: 2.5em;
+    }
+    h3, p {
+        font-family: 'Kalam', cursive;
+        font-weight: 400;
+        &::before {
+            background-image: url("../lignes_menus/palette1.png");
+        }
+        &::after {
+            background-image: url("../lignes_menus/palette2.png");
+        }
+
+    }
+    span::after {
+        background: rgb(101, 180, 79);
+    }
+    li p:nth-child(2) {
+        font-size: 1.1em;
+    }
+}

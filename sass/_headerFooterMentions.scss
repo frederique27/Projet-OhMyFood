@@ -1,0 +1,43 @@
+/* -----HEADER----- */
+
+header {
+    background-color: $vert;
+    display: flex;
+    h1 {
+        color: $jaune;
+        margin: 50px auto;
+        font-size: 5em;
+        font-family: sans-serif;
+        text-align: center;
+    }
+}
+
+/* -----FOOTER----- */
+
+footer {
+    @include display-flex(space-between);
+    background-color: $vert;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    a {
+        color: $jaune;
+        font-family: "Montserrat";
+        width: 300px;
+        margin: 30px 0;
+        &:hover {
+            animation: shake .5s infinite;
+        }
+    }
+}
+
+// -----PAGE MENTIONS LEGALES-----//
+#mentions_legales {
+    width: 70%;
+    text-align: center;
+    margin: 50px auto;  
+    margin-bottom: 125px;
+}

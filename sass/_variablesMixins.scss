@@ -1,0 +1,56 @@
+// *****VARIABLES*****
+$jaune: rgb(253, 203, 70);
+$vert: rgb(87, 156, 135);
+$couleurmenu1: rgb(252, 223, 219);
+$couleurmenu2: rgb(255, 245, 254);
+$couleurmenu3: rgb(235, 238, 239);
+$couleurmenu4: rgb(253, 255, 253);
+
+// *****MIXINS*****
+@mixin a-link {
+    text-decoration: none;
+    width: 100%;
+}
+@mixin display-flex ($justifycontent){
+    display: flex;
+    text-align: center;
+    justify-content: $justifycontent;
+}
+@mixin box-shadow {
+    box-shadow: 0.5px 0.5px 5px grey;  
+}
+
+@mixin icon-musique {
+    background: linear-gradient(to right, rgba(249, 66, 77, 1), rgba(249, 161, 130, 0.9));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@mixin titre-chic {
+    font-family: 'Croissant One', cursive;
+    background: linear-gradient(to right, rgba(198, 116, 18, 0.9) 25%, rgba(165, 103, 153, 0.9) 50%, rgba(110, 76, 204, 0.9) 75%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@mixin titre-delice {
+    font-family: 'Parisienne', cursive;
+    background: linear-gradient(to right, rgb(4, 49, 223) 15%, rgb(84, 222, 253));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+}
+// color: rgb(198, 116, 18);
+//     }
+//     ul li:nth-child(n+5) {
+//         color: rgb(165, 103, 153);
+//     }
+//     ul li:nth-child(n+9) {
+//         color: rgb(110, 76, 204);
+
+@mixin titre-palette {
+    font-family: 'Kaushan Script', cursive;
+    background: linear-gradient(to right, rgb(47, 105, 45), rgb(176, 232, 122), rgba(246, 255, 117, 0.58));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}

@@ -1,0 +1,116 @@
+// PAGE ACCUEIL
+
+#quatre_menus {
+    margin: 50px 150px;
+    div {
+        display: flex;
+        div:first-child, div:last-child {
+            @include box-shadow();
+            height: 400px;
+            margin: 30px;
+            width: 100%;
+        }
+    }
+    a {
+        @include display-flex(center);
+        margin: 10px;
+        flex-direction: column;
+        transition: 0.8s;
+        &:hover {
+            transition: transform 1s;
+            transform: scale(1.1);
+            opacity: 0.60;
+        }
+    } 
+    h3 {
+        font-size: 2.75em;
+        margin: 0;
+    }
+}
+
+#menu1 {
+    background-color: $couleurmenu1;
+    h2 {
+    color: rgb(61, 19, 25);
+    font-family: 'Devonshire', cursive;
+    font-size: 2.75em;
+    font-weight: 400;
+    margin: 0;
+    }
+    h3 {
+        font-family: 'Kalam', cursive;
+        color: rgb(61, 19, 25);
+    }
+    i::before {
+        @include icon-musique();
+        font-size: 50px;
+    }
+}
+
+#menu2 {
+    background-color: $couleurmenu2;
+    h3 {
+        font-family: 'Libre Caslon Text', serif;
+        color: rgb(199, 116, 18);
+    }
+    h2 {
+        @include titre-chic();
+        font-size: 1.75em;
+    }
+}
+
+#menu3 {
+    background-color: $couleurmenu3;
+    h3 {
+    color: rgb(8, 135, 251);
+    font-family: 'Kalam', cursive;
+    font-weight: 400;
+    }
+    h2 {
+        @include titre-delice();
+        font-size: 2.25em;
+    }
+}
+
+#menu4 {
+    background-color: $couleurmenu4;
+    h3 {
+        color: rgb(114, 191, 86);
+        font-family: 'Kalam', cursive;
+        font-weight: 400;
+    }
+    h2 {
+        @include titre-palette();
+        font-size: 2em;
+    }
+}
+
+#prochainement {
+    display: flex;
+    margin-bottom: 20px;
+    p {
+        margin: auto;
+        color: $jaune;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.5em;
+        background-color: $vert;
+        border: 1px solid $vert;
+        border-radius: 10px;
+        padding: 10px 30px;
+        margin-bottom: 125px;
+    }
+    span {
+        width: 5px;
+        height: 5px;
+        background-color: $jaune;
+        border-radius: 50%;
+        display: inline-block;
+        animation: bounce 1s infinite;
+        &:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+        &:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+    }
+}
