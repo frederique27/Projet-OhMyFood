@@ -84,7 +84,7 @@ body a {
   width: 100%;
 }
 
-h2, h3 {
+h1, h2, h3 {
   text-align: center;
 }
 
@@ -101,7 +101,6 @@ header h1 {
   margin: 50px auto;
   font-size: 5em;
   font-family: sans-serif;
-  text-align: center;
 }
 
 /* -----FOOTER----- */
@@ -115,11 +114,10 @@ footer {
           justify-content: space-between;
   background-color: #579c87;
   font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
+  font-size: 1.5em;
   bottom: 0;
   width: 100%;
   position: fixed;
-  z-index: 1;
 }
 
 footer a {
@@ -151,7 +149,7 @@ footer a:hover {
   display: flex;
 }
 
-#quatre_menus div div:first-child, #quatre_menus div div:last-child {
+#quatre_menus div div {
   -webkit-box-shadow: 0.5px 0.5px 5px grey;
           box-shadow: 0.5px 0.5px 5px grey;
   height: 400px;
@@ -276,7 +274,6 @@ footer a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 20px;
 }
 
 #prochainement p {
@@ -285,7 +282,6 @@ footer a:hover {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.5em;
   background-color: #579c87;
-  border: 1px solid #579c87;
   border-radius: 10px;
   padding: 10px 30px;
   margin-bottom: 125px;
@@ -345,17 +341,11 @@ footer a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .menu_complet h3::before {
   content: "";
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   background-repeat: no-repeat;
   margin-top: 5px;
   background-size: contain;
@@ -364,9 +354,6 @@ footer a:hover {
 .menu_complet h3::after {
   content: "";
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   background-repeat: no-repeat;
   margin-top: 5px;
   background-size: contain;
@@ -374,7 +361,8 @@ footer a:hover {
 
 .menu_complet span {
   font-size: 1.25em;
-  width: 100%;
+  margin: 0 50px;
+  white-space: nowrap;
 }
 
 .menu_complet span::after {

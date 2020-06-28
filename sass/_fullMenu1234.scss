@@ -18,17 +18,12 @@
     li {
         @include display-flex(space-between);
     }
-    // h2 {
-    //     font-size: 2em;
-    // }
     h3 {
         margin: 75px 0 10px 0;
         display: flex;
-        justify-content: space-between;
         &::before {
             content: "";
             width: 100%;
-            display: flex;
             background-repeat: no-repeat;
             margin-top: 5px;
             background-size: contain;
@@ -36,7 +31,6 @@
         &::after {
             content: "";
             width: 100%;
-            display: flex;
             background-repeat: no-repeat;
             margin-top: 5px;
             background-size: contain;
@@ -44,14 +38,14 @@
     }
     span {
         font-size: 1.25em;
-        width: 100%;
+        margin: 0 50px;
+        white-space: nowrap;
     }
     span::after {
         content: '';
         display: block;
         width: 0;
         height: 2px;
-        // background: black;
         transition: width .3s;
     }
     span:hover::after {
@@ -96,7 +90,6 @@
             background-image: url("../lignes_menus/note2.png");
         }
     span {
-        // font-family: 'Courgette', cursive;
         font-family: 'Kalam', cursive;
     }    
     }
@@ -104,7 +97,6 @@
         background: black;
     }
     p {
-        // font-family: 'Courgette', cursive;
         font-family: 'Kalam', cursive;
     }
     li p:nth-child(2) {

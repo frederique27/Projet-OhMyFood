@@ -4,7 +4,7 @@
     margin: 50px 150px;
     div {
         display: flex;
-        div:first-child, div:last-child {
+        div {
             @include box-shadow();
             height: 400px;
             margin: 30px;
@@ -87,14 +87,12 @@
 
 #prochainement {
     display: flex;
-    margin-bottom: 20px;
     p {
         margin: auto;
         color: $jaune;
         font-family: 'Montserrat', sans-serif;
         font-size: 1.5em;
         background-color: $vert;
-        border: 1px solid $vert;
         border-radius: 10px;
         padding: 10px 30px;
         margin-bottom: 125px;
