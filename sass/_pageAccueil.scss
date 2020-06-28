@@ -13,7 +13,7 @@
     }
     a {
         @include display-flex(center);
-        margin: 10px;
+        margin: 15px;
         flex-direction: column;
         transition: 0.8s;
         &:hover {

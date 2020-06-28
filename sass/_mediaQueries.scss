@@ -1,5 +1,67 @@
+
 @media screen and (max-width: 900px) {
     #quatre_menus {
         margin: 50px;
+    }
+    .menu_complet {
+        width: 90%;
+        ul {
+            margin: 50px;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header h1 {
+        font-size: 4em;
+        margin: 25px auto;
+    }
+    #quatre_menus div {
+        display: block;
+        div {
+            height: 350px;
+            width: 350px;
+            margin: 20px auto;
+            display: flex;
+            a {
+                margin: auto 15px;
+            }
+        }
+    }
+    .menu_complet ul {
+        margin: 0 20px;
+    }
+    .menu_complet span {
+        margin: 0 10px;
+    }
+    footer {
+        font-size: 1.25em;
+        a {
+            margin: 20px 0;
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #quatre_menus div div {
+        width: auto;
+    }
+    .menu_complet h2 {
+        font-size: 1em;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    #quatre_menus {
+        margin: 50px 300px;
+    }
+    #mentions_legales {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    #quatre_menus div div {
+        height: 550px;
     }
 }
