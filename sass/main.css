@@ -45,7 +45,7 @@
 }
 
 @-webkit-keyframes bounce {
-  20% {
+  0% {
     height: 5px;
     width: 5px;
     -webkit-transform: translateY(0px);
@@ -60,7 +60,7 @@
 }
 
 @keyframes bounce {
-  20% {
+  0% {
     height: 5px;
     width: 5px;
     -webkit-transform: translateY(0px);
@@ -172,15 +172,13 @@ footer a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 #quatre_menus a:hover {
-  -webkit-transition: -webkit-transform 1s;
-  transition: -webkit-transform 1s;
-  transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   opacity: 0.60;
