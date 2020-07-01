@@ -74,7 +74,6 @@
   }
 }
 
-/* -----BODY----- */
 body {
   margin: 0;
 }
@@ -88,7 +87,6 @@ h1, h2, h3 {
   text-align: center;
 }
 
-/* -----HEADER----- */
 header {
   background-color: #579c87;
   display: -webkit-box;
@@ -103,7 +101,10 @@ header h1 {
   font-family: sans-serif;
 }
 
-/* -----FOOTER----- */
+header a:hover {
+  text-shadow: #b98600 2px 2px;
+}
+
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -113,7 +114,7 @@ footer {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: #579c87;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.5em;
   bottom: 0;
   width: 100%;
@@ -122,7 +123,7 @@ footer {
 
 footer a {
   color: #fdcb46;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   width: 300px;
   margin: 30px 0;
 }
@@ -134,9 +135,10 @@ footer a:hover {
 
 #mentions_legales {
   width: 70%;
+  margin: auto;
+  margin-bottom: 125px;
   text-align: center;
   margin: 50px auto;
-  margin-bottom: 125px;
 }
 
 #quatre_menus {
@@ -195,14 +197,14 @@ footer a:hover {
 
 #menu1 h2 {
   color: #3d1319;
-  font-family: 'Devonshire', cursive;
+  font-family: "Devonshire", cursive;
   font-size: 2.75em;
   font-weight: 400;
   margin: 0;
 }
 
 #menu1 h3 {
-  font-family: 'Kalam', cursive;
+  font-family: "Kalam", cursive;
   color: #3d1319;
 }
 
@@ -218,13 +220,8 @@ footer a:hover {
   background-color: #fff5fe;
 }
 
-#menu2 h3 {
-  font-family: 'Libre Caslon Text', serif;
-  color: #c77412;
-}
-
 #menu2 h2 {
-  font-family: 'Croissant One', cursive;
+  font-family: "Croissant One", cursive;
   background: -webkit-gradient(linear, left top, right top, color-stop(25%, rgba(198, 116, 18, 0.9)), color-stop(50%, rgba(165, 103, 153, 0.9)), color-stop(75%, rgba(110, 76, 204, 0.9)));
   background: linear-gradient(to right, rgba(198, 116, 18, 0.9) 25%, rgba(165, 103, 153, 0.9) 50%, rgba(110, 76, 204, 0.9) 75%);
   -webkit-background-clip: text;
@@ -232,18 +229,17 @@ footer a:hover {
   font-size: 1.75em;
 }
 
+#menu2 h3 {
+  font-family: "Libre Caslon Text", serif;
+  color: #c77412;
+}
+
 #menu3 {
   background-color: #ebeeef;
 }
 
-#menu3 h3 {
-  color: #0887fb;
-  font-family: 'Kalam', cursive;
-  font-weight: 400;
-}
-
 #menu3 h2 {
-  font-family: 'Parisienne', cursive;
+  font-family: "Parisienne", cursive;
   background: -webkit-gradient(linear, left top, right top, color-stop(15%, #0431df), to(#54defd));
   background: linear-gradient(to right, #0431df 15%, #54defd);
   -webkit-background-clip: text;
@@ -251,23 +247,29 @@ footer a:hover {
   font-size: 2.25em;
 }
 
+#menu3 h3 {
+  color: #0887fb;
+  font-family: "Kalam", cursive;
+  font-weight: 400;
+}
+
 #menu4 {
   background-color: #fdfffd;
 }
 
-#menu4 h3 {
-  color: #72bf56;
-  font-family: 'Kalam', cursive;
-  font-weight: 400;
-}
-
 #menu4 h2 {
-  font-family: 'Kaushan Script', cursive;
+  font-family: "Kaushan Script", cursive;
   background: -webkit-gradient(linear, left top, right top, from(#2f692d), color-stop(#b0e87a), to(rgba(246, 255, 117, 0.58)));
   background: linear-gradient(to right, #2f692d, #b0e87a, rgba(246, 255, 117, 0.58));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 2em;
+}
+
+#menu4 h3 {
+  color: #72bf56;
+  font-family: "Kalam", cursive;
+  font-weight: 400;
 }
 
 #prochainement {
@@ -277,14 +279,15 @@ footer a:hover {
 }
 
 #prochainement p {
+  width: auto;
   margin: auto;
+  margin-bottom: 125px;
   color: #fdcb46;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.5em;
   background-color: #579c87;
   border-radius: 10px;
   padding: 10px 30px;
-  margin-bottom: 125px;
 }
 
 #prochainement span {
@@ -308,18 +311,18 @@ footer a:hover {
 }
 
 .premier_titre {
-  font-size: 1.75em;
+  font-size: 1.6em;
   font-family: sans-serif;
 }
 
 .menu_complet {
   -webkit-box-shadow: 0.5px 0.5px 5px grey;
           box-shadow: 0.5px 0.5px 5px grey;
-  max-width: 1200px;
-  margin: auto;
   width: 70%;
-  padding: 80px 0;
+  margin: auto;
   margin-bottom: 125px;
+  max-width: 1200px;
+  padding: 80px 0;
 }
 
 .menu_complet ul {
@@ -347,15 +350,7 @@ footer a:hover {
   display: flex;
 }
 
-.menu_complet h3::before {
-  content: "";
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-
-.menu_complet h3::after {
+.menu_complet h3::before, .menu_complet h3::after {
   content: "";
   width: 100%;
   background-repeat: no-repeat;
@@ -380,8 +375,6 @@ footer a:hover {
 
 .menu_complet span:hover::after {
   width: 100%;
-  -webkit-transition: width .3s;
-  transition: width .3s;
 }
 
 #menu_note {
@@ -417,7 +410,7 @@ footer a:hover {
 }
 
 #menu_note h2 {
-  font-family: 'Devonshire', cursive;
+  font-family: "Devonshire", cursive;
   font-weight: 400;
 }
 
@@ -430,7 +423,7 @@ footer a:hover {
 }
 
 #menu_note h3 span {
-  font-family: 'Kalam', cursive;
+  font-family: "Kalam", cursive;
 }
 
 #menu_note span::after {
@@ -438,7 +431,7 @@ footer a:hover {
 }
 
 #menu_note p {
-  font-family: 'Kalam', cursive;
+  font-family: "Kalam", cursive;
 }
 
 #menu_note li p:nth-child(2) {
@@ -450,7 +443,7 @@ footer a:hover {
 }
 
 #menu_chic h2 {
-  font-family: 'Croissant One', cursive;
+  font-family: "Croissant One", cursive;
   background: -webkit-gradient(linear, left top, right top, color-stop(25%, rgba(198, 116, 18, 0.9)), color-stop(50%, rgba(165, 103, 153, 0.9)), color-stop(75%, rgba(110, 76, 204, 0.9)));
   background: linear-gradient(to right, rgba(198, 116, 18, 0.9) 25%, rgba(165, 103, 153, 0.9) 50%, rgba(110, 76, 204, 0.9) 75%);
   -webkit-background-clip: text;
@@ -527,7 +520,7 @@ footer a:hover {
 }
 
 #menu_delice h2 {
-  font-family: 'Parisienne', cursive;
+  font-family: "Parisienne", cursive;
   background: -webkit-gradient(linear, left top, right top, color-stop(15%, #0431df), to(#54defd));
   background: linear-gradient(to right, #0431df 15%, #54defd);
   -webkit-background-clip: text;
@@ -536,7 +529,7 @@ footer a:hover {
 }
 
 #menu_delice h3, #menu_delice p {
-  font-family: 'Kalam', cursive;
+  font-family: "Kalam", cursive;
   font-weight: 400;
 }
 
@@ -597,7 +590,7 @@ footer a:hover {
 }
 
 #menu_palette h2 {
-  font-family: 'Kaushan Script', cursive;
+  font-family: "Kaushan Script", cursive;
   background: -webkit-gradient(linear, left top, right top, from(#2f692d), color-stop(#b0e87a), to(rgba(246, 255, 117, 0.58)));
   background: linear-gradient(to right, #2f692d, #b0e87a, rgba(246, 255, 117, 0.58));
   -webkit-background-clip: text;
@@ -606,7 +599,7 @@ footer a:hover {
 }
 
 #menu_palette h3, #menu_palette p {
-  font-family: 'Kalam', cursive;
+  font-family: "Kalam", cursive;
   font-weight: 400;
 }
 
@@ -677,6 +670,7 @@ footer a:hover {
   }
   .menu_complet h2 {
     font-size: 1em;
+    margin: auto 10px;
   }
 }
 

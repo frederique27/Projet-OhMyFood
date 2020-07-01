@@ -1,17 +1,15 @@
-// PAGE HTML MENU 1234
+// FULL MENUS -1234-
 
 .premier_titre {
-    font-size: 1.75em;
+    font-size: 1.6em;
     font-family: sans-serif;
 }
 
 .menu_complet {
     @include box-shadow();
+    @include margin-bottom (70%, auto);
     max-width: 1200px;
-    margin: auto;
-    width: 70%;
     padding: 80px 0;
-    margin-bottom: 125px;
     ul {
         margin: 50px 80px;
         padding: 0;
@@ -26,14 +24,7 @@
     h3 {
         margin: 75px 0 10px 0;
         display: flex;
-        &::before {
-            content: "";
-            width: 100%;
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-position: center;
-        }
-        &::after {
+        &::before, &::after {
             content: "";
             width: 100%;
             background-repeat: no-repeat;
@@ -55,14 +46,13 @@
     }
     span:hover::after {
         width: 100%;
-        transition: width .3s;
     }
 }
 
-// -----PAGE LA NOTE ENCHANTEE 1-----//
+// PAGE LA NOTE ENCHANTEE 1
 
 #menu_note {
-    background-color: $couleurmenu1;
+    background-color: $backgroundmenu1;
     >i{
         display: block;
         text-align: center;
@@ -84,7 +74,7 @@
         margin: 0;
     }
     h2 {
-        font-family: 'Devonshire', cursive;
+        font-family: $devonshire;
         font-weight: 400;
     }
     h3 {
@@ -95,14 +85,14 @@
             background-image: url("../lignes_menus/note2.png");
         }
     span {
-        font-family: 'Kalam', cursive;
+        font-family: $kalam;
     }    
     }
     span::after {
         background: black;
     }
     p {
-        font-family: 'Kalam', cursive;
+        font-family: $kalam;
     }
     li p:nth-child(2) {
         font-weight: 600;
@@ -110,10 +100,10 @@
 }
 
 
-// -----PAGE LE CHIC A LA FRANCAISE 2----- //
+// PAGE LE CHIC A LA FRANCAISE 2
 
 #menu_chic {
-    background-color: $couleurmenu2;
+    background-color: $backgroundmenu2;
     h2 {
         @include titre-chic();
         font-size: 2em;
@@ -126,10 +116,10 @@
             background-image: url("../lignes_menus/chic1b.png");
         }
         span::after {
-            background: rgb(198, 116, 18);
+            background: $menu2entree;
         }
         span {
-            color: rgb(198, 116, 18);
+            color: $menu2entree;
         }
     }
     h3:nth-of-type(2) {
@@ -140,10 +130,10 @@
             background-image: url("../lignes_menus/chic2b.png");
         }
         span::after {
-            background: rgb(165, 103, 153);
+            background: $menu2repas;
         }
         span {
-            color: rgb(165, 103, 153);
+            color: $menu2repas;
         }
     }
     h3:nth-of-type(3) {
@@ -154,36 +144,36 @@
             background-image: url("../lignes_menus/chic3b.png");
         }
         span::after {
-            background: rgb(110, 76, 204);
+            background: $menu2dessert;
         }
         span {
-            color: rgb(110, 76, 204);
+            color: $menu2dessert;
         }
     }
     ul li:nth-child(-n+4) {
-        color: rgb(198, 116, 18);
+        color: $menu2entree;
     }
     ul li:nth-child(n+5) {
-        color: rgb(165, 103, 153);
+        color: $menu2repas;
     }
     ul li:nth-child(n+9) {
-        color: rgb(110, 76, 204);
+        color: $menu2dessert;
     }
     li p:nth-child(2) {
         font-size: 1.1em;
     }
 }
 
-// -----PAGE LE DELICE DES PAPILLES 3----- //
+// PAGE LE DELICE DES PAPILLES 3
 
 #menu_delice {
-    background-color: $couleurmenu3;
+    background-color: $backgroundmenu3;
     h2 {
         @include titre-delice();
         font-size: 2.5em;
     }
     h3, p {
-        font-family:'Kalam', cursive;
+        font-family:$kalam;
         font-weight: 400;
     }
     h3:first-child {
@@ -194,10 +184,10 @@
             background-image: url("../lignes_menus/delice1b.png");
         }
         span::after {
-            background: rgb(2, 40, 221);
+            background: $menu3entree;
         }
         span {
-            color: rgb(2, 40, 221);
+            color: $menu3entree;
         }
     }
     h3:nth-of-type(2) {
@@ -208,10 +198,10 @@
             background-image: url("../lignes_menus/delice2b.png");
         }
         span::after {
-            background: rgb(6, 112, 243);
+            background: $menu3repas;
         }
         span {
-            color: rgb(6, 112, 243);
+            color: $menu3repas;
         }
     }
     h3:nth-of-type(3) {
@@ -222,10 +212,10 @@
             background-image: url("../lignes_menus/delice3b.png");
         }
         span::after {
-            background: rgb(34, 157, 249);
+            background: $menu3dessert;
         }
         span {
-            color: rgb(34, 157, 249);
+            color: $menu3dessert;
         }
     }
     li p:nth-child(2) {
@@ -233,16 +223,16 @@
     }
 }
 
-// -----PAGE LA PALETTE DU GOUT 4----- //
+// PAGE LA PALETTE DU GOUT 4
 
 #menu_palette {
-    background-color: $couleurmenu4;
+    background-color: $backgroundmenu4;
     h2 {
         @include titre-palette();
         font-size: 2.5em;
     }
     h3, p {
-        font-family: 'Kalam', cursive;
+        font-family: $kalam;
         font-weight: 400;
         &::before {
             background-image: url("../lignes_menus/palette1.png");
@@ -250,7 +240,6 @@
         &::after {
             background-image: url("../lignes_menus/palette2.png");
         }
-
     }
     span::after {
         background: rgb(101, 180, 79);

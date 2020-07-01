@@ -1,5 +1,4 @@
-// ANIMATIONS
-
+// Wiggle effect
 @keyframes shake{
     0% { transform: translate(0px, 0px) rotate(0deg); }
     25% { transform: translate(1px, 1px) rotate(1deg); }
@@ -8,6 +7,7 @@
     100% { transform: translate(-1px, 1px) rotate(-1deg); }
 }
 
+// Points prochainement
 @keyframes bounce {
     20% { 
         height: 5px; 

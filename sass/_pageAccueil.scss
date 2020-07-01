@@ -1,5 +1,3 @@
-// PAGE ACCUEIL
-
 #quatre_menus {
     margin: 50px 150px;
     div {
@@ -29,17 +27,17 @@
 }
 
 #menu1 {
-    background-color: $couleurmenu1;
+    background-color: $backgroundmenu1;
     h2 {
-    color: rgb(61, 19, 25);
-    font-family: 'Devonshire', cursive;
+    color: $petitmenu1;
+    font-family: $devonshire;
     font-size: 2.75em;
     font-weight: 400;
     margin: 0;
     }
     h3 {
-        font-family: 'Kalam', cursive;
-        color: rgb(61, 19, 25);
+        font-family: $kalam;
+        color: $petitmenu1;
     }
     i::before {
         @include icon-musique();
@@ -48,54 +46,53 @@
 }
 
 #menu2 {
-    background-color: $couleurmenu2;
-    h3 {
-        font-family: 'Libre Caslon Text', serif;
-        color: rgb(199, 116, 18);
-    }
+    background-color: $backgroundmenu2;
     h2 {
         @include titre-chic();
         font-size: 1.75em;
     }
+    h3 {
+        font-family: $librecaslon;
+        color: rgb(199, 116, 18);
+    }
 }
 
 #menu3 {
-    background-color: $couleurmenu3;
-    h3 {
-    color: rgb(8, 135, 251);
-    font-family: 'Kalam', cursive;
-    font-weight: 400;
-    }
+    background-color: $backgroundmenu3;
     h2 {
         @include titre-delice();
         font-size: 2.25em;
     }
+    h3 {
+    color: rgb(8, 135, 251);
+    font-family: $kalam;
+    font-weight: 400;
+    }
 }
 
 #menu4 {
-    background-color: $couleurmenu4;
-    h3 {
-        color: rgb(114, 191, 86);
-        font-family: 'Kalam', cursive;
-        font-weight: 400;
-    }
+    background-color: $backgroundmenu4;
     h2 {
         @include titre-palette();
         font-size: 2em;
+    }
+    h3 {
+        color: rgb(114, 191, 86);
+        font-family: $kalam;
+        font-weight: 400;
     }
 }
 
 #prochainement {
     display: flex;
     p {
-        margin: auto;
+        @include margin-bottom (auto, auto);
         color: $jaune;
-        font-family: 'Montserrat', sans-serif;
+        font-family: $montserrat;
         font-size: 1.5em;
         background-color: $vert;
         border-radius: 10px;
         padding: 10px 30px;
-        margin-bottom: 125px;
     }
     span {
         width: 5px;
