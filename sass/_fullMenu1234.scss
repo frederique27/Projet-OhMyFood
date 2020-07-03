@@ -11,7 +11,7 @@
     max-width: 1200px;
     padding: 80px 0;
     ul {
-        margin: 50px 80px;
+        margin: 0 80px;
         padding: 0;
     }
     li {
@@ -22,7 +22,7 @@
         }
     }
     h3 {
-        margin: 75px 0 10px 0;
+        margin: 50px 80px 0;
         display: flex;
         &::before, &::after {
             content: "";
@@ -72,6 +72,7 @@
     h2:last-child {
         font-size: 2em;
         margin: 0;
+        margin-top: 50px;
     }
     h2 {
         font-family: $devonshire;
@@ -108,7 +109,7 @@
         @include titre-chic();
         font-size: 2em;
     }
-    h3:first-child {
+    h3:nth-of-type(1) {
         &::before {
             background-image: url("../lignes_menus/chic1a.png");
         }
@@ -176,7 +177,7 @@
         font-family:$kalam;
         font-weight: 400;
     }
-    h3:first-child {
+    h3:nth-of-type(1) {
         &::before {
             background-image: url("../lignes_menus/delice1a.png");
         }
