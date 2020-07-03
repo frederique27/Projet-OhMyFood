@@ -45,7 +45,7 @@
 }
 
 @-webkit-keyframes bounce {
-  0% {
+  20% {
     height: 5px;
     width: 5px;
     -webkit-transform: translateY(0px);
@@ -60,7 +60,7 @@
 }
 
 @keyframes bounce {
-  0% {
+  20% {
     height: 5px;
     width: 5px;
     -webkit-transform: translateY(0px);
