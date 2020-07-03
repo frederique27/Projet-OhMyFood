@@ -498,15 +498,15 @@ footer a:hover {
   color: #6e4ccc;
 }
 
-#menu_chic ul li:nth-child(-n+4) {
+#menu_chic ul:nth-of-type(1) {
   color: #c67412;
 }
 
-#menu_chic ul li:nth-child(n+5) {
+#menu_chic ul:nth-of-type(2) {
   color: #a56799;
 }
 
-#menu_chic ul li:nth-child(n+9) {
+#menu_chic ul:nth-of-type(3) {
   color: #6e4ccc;
 }
 
